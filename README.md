@@ -1,4 +1,4 @@
-# 📦 AJAX - Requisições POST e DELETE - Alpha Lessons.
+# 📦 AJAX - Requisições POST, PUT, GET and DELETE - Alpha Lessons.
 
 ### This repository was created to share the exercises of each class with colleagues and teachers
 

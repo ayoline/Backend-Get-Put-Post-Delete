@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Anderson P. Soares" />
+    <meta property="og:description" content="Exercício: NodeJS - Fetch() - 03-01-22" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main>
+
+        <section id="search-box">
+            <div id="inputs-in-search-box">
+                <div>
+                    <select name="select" id="selected-option">
+                        <option disabled selected value="">--select an option--</option>
+                        <option value="id">Id</option>
+                        <option value="name">Name</option>
+                    </select>
+                    <input id="general-input" name="select" type="number" />
+                </div>
+                <button id="btn-search">Search</button>
+                <button id="btn-add-user">Add user</button>
+                <button id="btn-del-user">Delete user</button>
+                <button id="btn-update">update user</button>
+            </div>
+        </section>
+
+        <section id="table-box">
+            <div id="table-in-table-box">
+                <table id=table>
+                    <tr>
+                        <th>ID</th>
+                        <th>NAME</th>
+                    </tr>
+                </table>
+            </div>
+        </section>
+
+        <section id="add-user-forms">
+            <div id="add-forms">
+                <div id="close-add-forms">
+                    <p id="btn-in-close-add-forms"></p>
+                </div>
+                <h3>Add User:</h3>
+                <div class="inputs-in-add-user-forms">
+                    <label for="add-name-input">Name</label>
+                    <input id="add-name-input" type="text" />
+                </div>
+                <button id="btn-add-confirm">Add</button>
+            </div>
+        </section>
+
+        <section id="update-user-forms">
+            <div id="update-forms">
+                <div id="close-update-forms">
+                    <p id="btn-in-close-update-forms"></p>
+                </div>
+                <h3>Update User:</h3>
+                <div class="inputs-in-update-user-forms">
+                    <label for="update-id-input">ID</label>
+                    <input id="update-id-input" type="text" />
+                </div>
+                <div class="inputs-in-update-user-forms">
+                    <label for="update-name-input">Name</label>
+                    <input id="update-name-input" type="text" />
+                </div>
+                <button id="btn-update-confirm">update</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="client-side.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: #747576;
+    background-color: #FFFFFF;;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1920px;
+    max-height: 1080px;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    margin: 0%;
+}
+
+main{
+    background-color: #E8ECEF;
+    box-shadow: 3px 3px 10px #2B2D42;
+    width: 90%;
+    height: 90%;
+    overflow-y: auto;
+    max-width: 1532px;
+    max-height: 972px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: 0px;
+    margin: auto;
+}
+
+#search-box{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#inputs-in-search-box{
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#inputs-in-search-box div{
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+#inputs-in-search-box input{
+    width: 70%;
+    margin-left: 10px;
+}
+
+#inputs-in-search-box button{
+    width: 50%;
+    align-self: flex-start;
+    font-weight: bold;
+    margin-top: 10px;
+    height: 25px;
+}
+
+#btn-add-user{
+    color: green;
+}
+
+#btn-del-user{
+    color: red;
+}
+
+#btn-update{
+    color: blue;
+}
+
+#table-box{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#table-in-table-box{
+    width: 90%;
+    height: 90%;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    width: 100%;
+}
+
+th, td {
+    border:1px solid black;
+    text-align: center;
+}
+
+th:first-child{
+    width: 10%;
+}
+
+#add-user-forms, #update-user-forms{
+    width: 25vw;
+    height:fit-content;
+    max-width: 766px;
+    max-height: 486px;
+    background-color: white;
+    position: fixed;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.8s ease;
+    top: 0px;
+    left: 5vw;
+}
+
+#add-forms, #update-forms{
+    width: 100%;
+    height: 100%;
+    background-color: #EDF2F4;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px #2B2D42;
+    margin-top: 2%;
+    border: thick #8D99AE;
+    margin-inline: auto;
+}
+
+#add-forms h3, #update-forms h3{
+    margin-top: 0%;
+}
+
+#add-forms input, #update-forms input{
+    width: 70%;
+    margin: 2%;
+}
+
+#add-forms button, #update-forms button{
+    color: white;
+    background-color: #18be63;
+    width: 30%;
+    height: 40px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    align-self: baseline;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#close-add-forms, #close-update-forms{
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: flex-end;
+    color: red;
+    padding: 0px;
+    margin-right: 2%;
+    margin-bottom: 0px;
+}
+
+#btn-in-close-add-forms:hover , #btn-in-close-update-forms:hover{
+    cursor: pointer;
+}
+
+.inputs-in-add-user-forms, .inputs-in-update-user-forms{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    padding: 0px;
+    flex-direction: row;
+    align-self: baseline;
+    vertical-align: bottom;
+}
+.inputs-in-add-user-forms input, .inputs-in-update-user-forms input {
+    height: fit-content;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.inputs-in-add-user-forms label, .inputs-in-update-user-forms label {
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#btn-add-confirm:hover, #btn-update-confirm:hover{
+    cursor: pointer;
+}

@@ -11,8 +11,8 @@ app.get('/produtos/all', function (req, res) {
 });
 
 app.get('/search', function (req, res) {
-    const value = Object.values(req.query)[0]
-    const key = Object.keys(req.query)[0]
+    const value = Object.values(req.query)[0];
+    const key = Object.keys(req.query)[0];
 
     const filtered = jsonObject.filter((element) => {
         if (key == "id") {
